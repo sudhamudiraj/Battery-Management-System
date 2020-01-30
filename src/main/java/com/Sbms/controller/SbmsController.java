@@ -60,7 +60,7 @@ public class SbmsController {
 			label.add(dtf.format(now) + " " + dtfTime.format(now));
 			sbms.setLabel(label);
 			sbmsRepositoryCopy.save(sbms);
-			
+			System.out.println("data saved");
 		}
 		SbmsCopy sbms1 = sbmsRepositoryCopy.findByDate(dtf.format(now));
 		do {
