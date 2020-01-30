@@ -72,6 +72,7 @@ public class SbmsController {
 			sbms1.setLabel(label);
 			sbmsRepositoryCopy.save(sbms1);
 			Thread.sleep(5000);
+			System.out.println("saved");
 		} while (sbms1 != null);
 		//return CompletableFuture.completedFuture(Arrays.asList(sbms1));
 
